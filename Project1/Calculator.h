@@ -13,5 +13,4 @@ namespace Calculator
 	double div(double left, double right);
 	double car(double left, double right);
 	double invert();
-	double memory();
 }
