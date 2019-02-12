@@ -7,6 +7,7 @@ bool working_on_right = false;
 char op;
 string left_value;
 string right_value;
+double memory, answer;
 void shift_left_value(char keycode)
 {
 	if (keycode == '.') {
@@ -67,14 +68,7 @@ int main()
 			case 'm':
 			case 'M':
 			{
-				if (working_on_right)
-				{
-					shift_right_value(memory());
-				}
-				else
-				{
-					shift_left_value(memory());
-				}
+				memory = answer;
 			} break;
 			case '+':
 			case '-':
@@ -91,28 +85,28 @@ int main()
 				{
 				case '+':
 				{
-					add(stod(left_value), stod(right_value));
-					cout << endl << add(stod(left_value), stod(right_value)) << endl;
+					answer = add(stod(left_value), stod(right_value));
+					cout << endl << answer << endl;
 				}break;
 				case '-':
 				{
-					sub(stod(left_value), stod(right_value));
-					cout << endl << sub(stod(left_value), stod(right_value)) << endl;
+					answer = sub(stod(left_value), stod(right_value));
+					cout << endl << answer << endl;
 				}break;
 				case '*':
 				{
-					mult(stod(left_value), stod(right_value));
-					cout << endl << mult(stod(left_value), stod(right_value)) << endl;
+					answer = mult(stod(left_value), stod(right_value));
+					cout << endl << answer << endl;
 				}break;
 				case '/':
 				{
-					div(stod(left_value), stod(right_value));
-					cout << endl << div(stod(left_value), stod(right_value)) << endl;
+					answer = div(stod(left_value), stod(right_value));
+					cout << endl << answer << endl;
 				}break;
 				case '^':
 				{
-					car(stod(left_value), stod(right_value));
-					cout << endl << car(stod(left_value), stod(right_value)) << endl;
+					answer = car(stod(left_value), stod(right_value));
+					cout << endl << answer << endl;
 				}break;
 				}
 			}
