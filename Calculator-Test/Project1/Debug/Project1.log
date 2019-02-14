@@ -1,0 +1,4 @@
+﻿  Main.cpp
+c:\users\wescr\source\repos\solution3\project1\main.cpp(72): warning C4244: 'argument': conversion from 'double' to 'char', possible loss of data
+c:\users\wescr\source\repos\solution3\project1\main.cpp(76): warning C4244: 'argument': conversion from 'double' to 'char', possible loss of data
+  Project1.vcxproj -> C:\Users\wescr\source\repos\Solution3\Debug\Exercise1.exe
